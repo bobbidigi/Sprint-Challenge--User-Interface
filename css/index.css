@@ -70,6 +70,22 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+/* nav */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+nav a {
+    /* border: 1px solid blueviolet; */
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
 
 .top-content {
     display: flex;

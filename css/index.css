@@ -133,9 +133,14 @@ width: 100%;
     text-decoration: none;
     color: black;
 }
+.content .text-container a:hover{
+    background: #000;
+    color: #fff;
+}
 
 .content .text-container img {
     padding: 20px 0;
+    width: 100%;
 }
 
 .top-content .text-container {
@@ -255,4 +260,16 @@ footer nav a {
 }
 .box10{
     background: dodgerblue;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background: lightblue;
+    }
+    .container{
+        max-width: 80%;
+    }
+    h2, p{
+        font-size: 15px;
+    }
 }

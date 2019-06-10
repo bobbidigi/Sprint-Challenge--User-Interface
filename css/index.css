@@ -71,22 +71,33 @@ p {
     margin: 0 auto;
 }
 /* nav */
-nav {
+header {
+    display: flex;
+    align-items: baseline;
+    padding: 25px 0;
+}
+header nav{
+    margin-left: 35px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding: 25px 0;
-    font-size: 14px;
+    font-size: 15px;
 }
 
-nav a {
+header nav a {
     /* border: 1px solid blueviolet; */
     color: black;
     font-weight: 600;
     text-decoration: none;
+    font-size: 10px;
 }
-
+header a img{
+    width: 125px;
+}
+.hero{
+height: 125px;
+width: 100%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;

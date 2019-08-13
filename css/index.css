@@ -70,7 +70,38 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+/* nav */
+header {
+    display: flex;
+    align-items: baseline;
+    padding: 25px 0;
+}
+header nav{
+    margin-left: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
 
+header nav a {
+    /* border: 1px solid blueviolet; */
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 10px;
+}
+header nav a:hover{
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+header a img{
+    width: 125px;
+}
+.hero{
+height: 125px;
+width: 100%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -78,10 +109,43 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-top: 25px;
+}
+
+.content .text-container a {
+    display: inline-block;
+    margin-top: 10px;
+    border: 1.5px solid black;
+    padding: 7px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+.content .text-container a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.content .text-container img {
+    padding: 20px 0;
+    width: 100%;
+}
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 2% 1%;
     padding-bottom: 20px;  
 }
 
@@ -104,7 +168,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -143,4 +206,70 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.full-section-1 {
+    padding: 25px 0;
+    border-bottom: 1px dashed black;
+    margin-bottom: 25px;
+}
+
+.full-section-2 {
+    padding: 25px 0;
+    margin-bottom: 25px;
+}
+
+.full-section-1 h2,
+.full-section-1 p,
+.full-section-2 h2,
+.full-section-2 p {
+    padding: 0 15px;
+}
+
+.box1{
+    background: teal;
+}
+.box2{
+    background: gold;
+}
+.box3 {
+    background: cadetblue;
+}
+.box4 {
+    background: coral;
+}
+
+
+.box5 {
+    background: crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+.box9{
+    background: indigo;
+}
+.box10{
+    background: dodgerblue;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background: lightblue;
+    }
+    .container{
+        max-width: 80%;
+    }
+    h2, p{
+        font-size: 15px;
+    }
 }
